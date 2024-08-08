@@ -1,0 +1,247 @@
+:root {
+  --cyan: #66e2dc;
+  --orange: #fa7453;
+  --yellow: #ffb964;
+  --white: #fcfaf9;
+  --slate: #191826;
+  --font: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Top Section */
+.main-container {
+  width: 70%;
+}
+
+.main-bg {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.patter-1 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+  width: 14rem;
+}
+
+.nav-bar {
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.top-section {
+}
+
+.title {
+  font-size: 5.1rem;
+  font-weight: 700;
+  width: 80%;
+}
+
+.top-section__description {
+  width: 50%;
+  font-size: 0.9rem;
+}
+
+/* Middle Section */
+
+.middle-section {
+  background-color: var(--slate);
+  position: relative;
+  margin-top: 12rem;
+  border-radius: 10px;
+  margin-bottom: 12rem;
+  padding-bottom: 7rem;
+}
+
+.illustration {
+  position: absolute;
+  width: 28%;
+  top: -6rem;
+  left: 6rem;
+  z-index: 2;
+}
+
+.pattern-2 {
+  position: relative;
+  object-fit: cover;
+  width: 30%;
+  left: 35%;
+  z-index: 1;
+}
+
+.plan-container {
+  background-color: var(--orange);
+  width: 42%;
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  padding: 2.5rem;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.middle-section__title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.middle-section__description {
+  font-size: 1.2rem;
+  /* margin-bottom: 0.8rem; */
+}
+
+.plan-amount {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.middle-section__ios {
+  background-color: var(--slate);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.middle-section__android {
+  background-color: var(white);
+  color: var(--slate);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Footer Section */
+
+footer {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+footer .logo {
+  margin-right: 6rem;
+  object-fit: contain;
+}
+.email {
+  font-weight: 700;
+}
+
+.social-media {
+  margin-left: 2rem;
+}
+
+.footer-rights__container {
+  flex-grow: 1;
+}
+
+/* Media Queries */
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575px) {
+  /* CSS rules for small screens */
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* CSS rules for tablets */
+}
+
+/* Medium Devices (Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for medium screens */
+  .main-container {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .middle-section__title {
+    font-size: 2rem;
+  }
+
+  .middle-section__description {
+    font-size: 0.8rem;
+  }
+
+  .plan-amount {
+    font-size: 2rem;
+  }
+
+  .middle-section__ios {
+    padding: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .middle-section__android {
+    font-size: 0.8rem;
+  }
+
+  footer .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Large Devices (Large Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 3.8rem;
+  }
+
+  .middle-section__title {
+    font-size: 2rem;
+  }
+
+  .middle-section__description {
+    font-size: 0.8rem;
+  }
+
+  .plan-amount {
+    font-size: 3rem;
+  }
+}
+
+/* Extra Large Devices (Extra Large Desktops) */
+@media (min-width: 1200px) {
+  .middle-section__title {
+    font-size: 3rem;
+  }
+  /* CSS rules for extra large screens */
+}
